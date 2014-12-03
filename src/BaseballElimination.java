@@ -114,39 +114,43 @@ public class BaseballElimination {
         // construct flow network
         int ID = name_ID.get(team);
         // the flow network excludes the current querying team
-        int teamNum = this.teamNum - 1;
+//        int teamNum = this.teamNum - 1;
         // node number = s + t + team number + game number
         int nodeNum = 2 + teamNum + teamNum * (teamNum - 1) / 2;
         // edge number = edges between team vertices and t
         // + edges between game vertices and s
         // + 2 for each game vertices as they are connected to two teams
-        int edgeNum = teamNum + 3 * teamNum * (teamNum - 1) / 2;
-        FlowNetwork fn = new FlowNetwork(nodeNum, edgeNum);
+        // int edgeNum = teamNum + 3 * teamNum * (teamNum - 1) / 2;
+        FlowNetwork fn = new FlowNetwork(nodeNum);
         // flow vertices numbered by:
         // team vertices = team IDs
-        // game vertices = team1 ID * team2 ID
-        int s = teamNum * 2, t = s + 1;
+        int s = nodeNum - 2, t = nodeNum - 1;
+        // game vertices: fill up the numbers between
+        int gameNum = teamNum;
         for (int i = 0; i < teamNum - 1; i++) {
             if (i != ID) {
                 for (int j = i + 1; j < teamNum; j++) {
                     if (j != ID) {
                         // from s to game vertices
-                        fn.addEdge(new FlowEdge(s, i * j, ID_Data.get(i).games[j]));
+                        fn.addEdge(new FlowEdge(s, gameNum, (double) ID_Data.get(i).games[j]));
                         // from game vertices to team vertices
-                        fn.addEdge(new FlowEdge(i * j, i, Double.POSITIVE_INFINITY));
-                        fn.addEdge(new FlowEdge(i * j, j, Double.POSITIVE_INFINITY));
+                        fn.addEdge(new FlowEdge(gameNum, i, Double.POSITIVE_INFINITY));
+                        fn.addEdge(new FlowEdge(gameNum, j, Double.POSITIVE_INFINITY));
+                        gameNum++;
                     }
                 }
             }
         }
-        for (int i = 0; i < teamNum - 1; i++) {
+        for (int i = 0; i < teamNum; i++) {
             // from team vertices to t
             if (i != ID)
-                fn.addEdge(new FlowEdge(i, t, ID_Data.get(ID).wins + ID_Data.get(ID).remains - ID_Data.get(i).wins));
+                 fn.addEdge(new FlowEdge(i, t, (double) (ID_Data.get(ID).wins + ID_Data.get(ID).remains - ID_Data.get(i).wins)));
         }
 
         // compute using Ford Fulkerson
         FordFulkerson ff = new FordFulkerson(fn, s, t);
+        StdOut.println(ff.value());
+        StdOut.println(ff.inCut(ID));
     }
 
     // subset R of teams that eliminates given team; null if not eliminated
