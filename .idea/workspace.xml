@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aca22f14-ce86-485a-99f7-72641ed10ee5" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BaseballElimination.java" afterPath="$PROJECT_DIR$/src/BaseballElimination.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BaseballEliminationTester.java" afterPath="$PROJECT_DIR$/src/BaseballEliminationTester.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/cs160-hw8/BaseballElimination.class" afterPath="$PROJECT_DIR$/out/production/cs160-hw8/BaseballElimination.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/cs160-hw8/BaseballEliminationTester.class" afterPath="$PROJECT_DIR$/out/production/cs160-hw8/BaseballEliminationTester.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="cs160-hw8.iws" />
@@ -321,9 +320,15 @@
       <option name="project" value="LOCAL" />
       <updated>1417637615131</updated>
       <workItem from="1417637616042" duration="131000" />
-      <workItem from="1417637781330" duration="4210000" />
+      <workItem from="1417637781330" duration="4266000" />
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="fixed flow network">
+      <created>1417642678554</created>
+      <option name="number" value="00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1417642678554</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <option name="createChangelist" value="false" />
     <option name="createBranch" value="false" />
     <option name="closeIssue" value="false" />
@@ -332,11 +337,11 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12914000" />
+    <option name="totallyTimeSpent" value="12970000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -377,6 +382,8 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
+    <MESSAGE value="fixed flow network" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed flow network" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
