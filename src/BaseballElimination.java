@@ -1,5 +1,4 @@
-import java.util.HashMap;
-import java.util.HashSet;
+import java.util.*;
 
 /**
  * Name: Zhuoming Tan
@@ -37,7 +36,9 @@ public class BaseballElimination {
 
         int i = 0;
         while (!in.isEmpty()) {
-            String[] tokens = in.readLine().split("\\s+");
+            // trim lines to deal with tabbing
+            String line = in.readLine().trim();
+            String[] tokens = line.split("\\s+");
             name_ID.put(tokens[0], i);
             int[] games = new int[teamNum];
             for (int j = 0; j < teamNum; j++)
@@ -90,42 +91,33 @@ public class BaseballElimination {
         if (!name_ID.containsKey(team))
             throw new java.lang.IllegalArgumentException();
 
-        // trivial elimination
-        boolean trivial = trivialElimination(team);
-        if (trivial) return true;
+        // trivial elimination: if exists eliminator
+        if (trivialElimination(team) != -1) return true;
 
-        // nontrivial elimination
-        nontrivialElimination(team);
-        return false;
+        // nontrivial elimination: if exists eliminator(s)
+        return !nontrivialElimination(team).isEmpty();
     }
 
     // trivial elimination criteria
-    private boolean trivialElimination(String team) {
+    private int trivialElimination(String team) {
         int ID = name_ID.get(team);
         // current wins plus remaining games, aka the biggest possible wins
         int currentPower = ID_Data.get(ID).wins + ID_Data.get(ID).remains;
         for (int i = 0; i < teamNum; i++)
             if (currentPower < ID_Data.get(i).wins)
-                return true;
-        return false;
+                return i;
+        return -1;
     }
 
-    private void nontrivialElimination(String team) {
-        // construct flow network
+    private Set<Integer> nontrivialElimination(String team) {
         int ID = name_ID.get(team);
-        // the flow network excludes the current querying team
-//        int teamNum = this.teamNum - 1;
+        // construct flow network, excluding the current querying team
         // node number = s + t + team number + game number
         int nodeNum = 2 + teamNum + teamNum * (teamNum - 1) / 2;
-        // edge number = edges between team vertices and t
-        // + edges between game vertices and s
-        // + 2 for each game vertices as they are connected to two teams
-        // int edgeNum = teamNum + 3 * teamNum * (teamNum - 1) / 2;
         FlowNetwork fn = new FlowNetwork(nodeNum);
-        // flow vertices numbered by:
         // team vertices = team IDs
         int s = nodeNum - 2, t = nodeNum - 1;
-        // game vertices: fill up the numbers between
+        // game vertices: fill up the numbers in between
         int gameNum = teamNum;
         for (int i = 0; i < teamNum - 1; i++) {
             if (i != ID) {
@@ -144,20 +136,34 @@ public class BaseballElimination {
         for (int i = 0; i < teamNum; i++) {
             // from team vertices to t
             if (i != ID)
-                 fn.addEdge(new FlowEdge(i, t, (double) (ID_Data.get(ID).wins + ID_Data.get(ID).remains - ID_Data.get(i).wins)));
+                fn.addEdge(new FlowEdge(i, t, (double) (ID_Data.get(ID).wins
+                        + ID_Data.get(ID).remains - ID_Data.get(i).wins)));
         }
 
-        // compute using Ford Fulkerson
+        // compute using Ford Fulkerson algorithm
         FordFulkerson ff = new FordFulkerson(fn, s, t);
-        StdOut.println(ff.value());
-        StdOut.println(ff.inCut(ID));
+        Set<Integer> eliminator = new HashSet<Integer>();
+        // teams on the source side of the min cut is the eliminators
+        for (int i = 0; i < teamNum; i++) {
+            if (i != ID)
+                if (ff.inCut(i)) eliminator.add(i);
+        }
+        return eliminator;
     }
 
     // subset R of teams that eliminates given team; null if not eliminated
     public Iterable<String> certificateOfElimination(String team) {
         if (!name_ID.containsKey(team))
             throw new java.lang.IllegalArgumentException();
-        return new HashSet<String>();
+        Set<String> eliminators = new HashSet<String>();
+        if (trivialElimination(team) != -1) {
+            eliminators.add(ID_Data.get(trivialElimination(team)).name);
+        } else {
+            Set<Integer> eliminatorIDs = nontrivialElimination(team);
+            for (Integer i : eliminatorIDs)
+                eliminators.add(ID_Data.get(i).name);
+        }
+        return eliminators;
     }
 
     public static void main(String[] args) {

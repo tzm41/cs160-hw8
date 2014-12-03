@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="aca22f14-ce86-485a-99f7-72641ed10ee5" name="Default" comment="">
+    <list default="true" id="aca22f14-ce86-485a-99f7-72641ed10ee5" name="Default" comment="final polish">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/cs160-hw8/BaseballElimination.class" afterPath="$PROJECT_DIR$/out/production/cs160-hw8/BaseballElimination.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/cs160-hw8/BaseballEliminationTester.class" afterPath="$PROJECT_DIR$/out/production/cs160-hw8/BaseballEliminationTester.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BaseballElimination.java" afterPath="$PROJECT_DIR$/src/BaseballElimination.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BaseballEliminationTester.java" afterPath="$PROJECT_DIR$/src/BaseballEliminationTester.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="cs160-hw8.iws" />
@@ -33,42 +34,15 @@
       <file leaf-file-name="BaseballElimination.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/BaseballElimination.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.35064936" vertical-offset="1443" max-vertical-offset="2490">
-              <caret line="123" column="50" selection-start-line="123" selection-start-column="50" selection-end-line="123" selection-end-column="50" />
+            <state vertical-scroll-proportion="0.8076923" vertical-offset="1908" max-vertical-offset="2610">
+              <caret line="179" column="9" selection-start-line="179" selection-start-column="9" selection-end-line="179" selection-end-column="9" />
               <folding>
-                <element signature="imports" expanded="true" />
                 <element signature="class#teamData#0;class#BaseballElimination#0" expanded="false" />
+                <element signature="e#1808#1809#0" expanded="true" />
+                <element signature="e#1847#1848#0" expanded="true" />
+                <element signature="e#5299#5308#0" expanded="true" />
+                <element signature="e#5836#5844#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FlowNetwork.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/FlowNetwork.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="431" max-vertical-offset="2640">
-              <caret line="49" column="25" selection-start-line="49" selection-start-column="25" selection-end-line="49" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FlowEdge.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/FlowEdge.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2670">
-              <caret line="171" column="40" selection-start-line="171" selection-start-column="40" selection-end-line="171" selection-end-column="40" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FordFulkerson.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/FordFulkerson.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1098" max-vertical-offset="3840">
-              <caret line="89" column="7" selection-start-line="89" selection-start-column="7" selection-end-line="89" selection-end-column="7" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -76,18 +50,8 @@
       <file leaf-file-name="BaseballEliminationTester.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/BaseballEliminationTester.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="300">
-              <caret line="11" column="33" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="teams4.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/teams4.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="165">
-              <caret line="4" column="8" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="8" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="18" max-vertical-offset="480">
+              <caret line="23" column="9" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -320,7 +284,7 @@
       <option name="project" value="LOCAL" />
       <updated>1417637615131</updated>
       <workItem from="1417637616042" duration="131000" />
-      <workItem from="1417637781330" duration="4266000" />
+      <workItem from="1417637781330" duration="7205000" />
     </task>
     <task id="LOCAL-00002" summary="fixed flow network">
       <created>1417642678554</created>
@@ -328,7 +292,13 @@
       <option name="project" value="LOCAL" />
       <updated>1417642678554</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="fixed flow network">
+      <created>1417642719082</created>
+      <option name="number" value="00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1417642719082</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <option name="createChangelist" value="false" />
     <option name="createBranch" value="false" />
     <option name="closeIssue" value="false" />
@@ -337,7 +307,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12970000" />
+    <option name="totallyTimeSpent" value="15909000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -358,7 +328,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20193861" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32876712" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32876712" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -383,7 +353,8 @@
       <TodoPanelSettings />
     </option>
     <MESSAGE value="fixed flow network" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed flow network" />
+    <MESSAGE value="final polish" />
+    <option name="LAST_COMMIT_MESSAGE" value="final polish" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -397,8 +368,11 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="1726" max-vertical-offset="2430">
           <caret line="148" column="55" selection-start-line="148" selection-start-column="55" selection-end-line="148" selection-end-column="55" />
           <folding>
-            <element signature="imports" expanded="true" />
             <element signature="class#teamData#0;class#BaseballElimination#0" expanded="false" />
+            <element signature="e#1808#1809#0" expanded="true" />
+            <element signature="e#1847#1848#0" expanded="true" />
+            <element signature="e#5299#5308#0" expanded="true" />
+            <element signature="e#5836#5844#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -416,8 +390,11 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="1980" max-vertical-offset="2430">
           <caret line="148" column="55" selection-start-line="148" selection-start-column="55" selection-end-line="148" selection-end-column="55" />
           <folding>
-            <element signature="imports" expanded="true" />
             <element signature="class#teamData#0;class#BaseballElimination#0" expanded="false" />
+            <element signature="e#1808#1809#0" expanded="true" />
+            <element signature="e#1847#1848#0" expanded="true" />
+            <element signature="e#5299#5308#0" expanded="true" />
+            <element signature="e#5836#5844#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -467,8 +444,11 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1245">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
             <element signature="class#teamData#0;class#BaseballElimination#0" expanded="false" />
+            <element signature="e#1808#1809#0" expanded="true" />
+            <element signature="e#1847#1848#0" expanded="true" />
+            <element signature="e#5299#5308#0" expanded="true" />
+            <element signature="e#5836#5844#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -502,8 +482,11 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="840">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
             <element signature="class#teamData#0;class#BaseballElimination#0" expanded="false" />
+            <element signature="e#1808#1809#0" expanded="true" />
+            <element signature="e#1847#1848#0" expanded="true" />
+            <element signature="e#5299#5308#0" expanded="true" />
+            <element signature="e#5836#5844#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -516,49 +499,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_40.jdk/Contents/Home/src.zip!/java/lang/NumberFormatException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="228" max-vertical-offset="690">
-          <caret line="64" column="0" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_40.jdk/Contents/Home/src.zip!/java/lang/Integer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="7301" max-vertical-offset="17895">
-          <caret line="526" column="0" selection-start-line="526" selection-start-column="0" selection-end-line="526" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/FordFulkerson.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="453" max-vertical-offset="3840">
-          <caret line="89" column="7" selection-start-line="89" selection-start-column="7" selection-end-line="89" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/teams1.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="120">
           <caret line="0" column="1" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/FlowEdge.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2670">
-          <caret line="171" column="40" selection-start-line="171" selection-start-column="40" selection-end-line="171" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/FlowNetwork.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="431" max-vertical-offset="2640">
-          <caret line="49" column="25" selection-start-line="49" selection-start-column="25" selection-end-line="49" selection-end-column="25" />
           <folding />
         </state>
       </provider>
@@ -571,21 +515,128 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/FlowNetwork.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.43073592" vertical-offset="431" max-vertical-offset="2640">
+          <caret line="49" column="25" selection-start-line="49" selection-start-column="25" selection-end-line="49" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FlowEdge.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="386" max-vertical-offset="2670">
+          <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FordFulkerson.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1121" max-vertical-offset="3840">
+          <caret line="98" column="5" selection-start-line="98" selection-start-column="5" selection-end-line="98" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_40.jdk/Contents/Home/src.zip!/java/lang/Integer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33333334" vertical-offset="7301" max-vertical-offset="17895">
+          <caret line="526" column="0" selection-start-line="526" selection-start-column="0" selection-end-line="526" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_40.jdk/Contents/Home/src.zip!/java/lang/NumberFormatException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7077922" vertical-offset="228" max-vertical-offset="690">
+          <caret line="64" column="0" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/teams29.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="540">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/teams24.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.35714287" vertical-offset="0" max-vertical-offset="465">
+          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/teams48.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.78571427" vertical-offset="363" max-vertical-offset="825">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/teams30.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.2012987" vertical-offset="93" max-vertical-offset="555">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/teams10.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="462">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/teams12.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="462">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/teams12-allgames.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="462">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/teams60.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1005">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/BaseballEliminationTester.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="300">
-          <caret line="11" column="33" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="18" max-vertical-offset="480">
+          <caret line="23" column="9" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/BaseballElimination.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.35064936" vertical-offset="1443" max-vertical-offset="2490">
-          <caret line="123" column="50" selection-start-line="123" selection-start-column="50" selection-end-line="123" selection-end-column="50" />
+        <state vertical-scroll-proportion="0.8076923" vertical-offset="1908" max-vertical-offset="2610">
+          <caret line="179" column="9" selection-start-line="179" selection-start-column="9" selection-end-line="179" selection-end-column="9" />
           <folding>
-            <element signature="imports" expanded="true" />
             <element signature="class#teamData#0;class#BaseballElimination#0" expanded="false" />
+            <element signature="e#1808#1809#0" expanded="true" />
+            <element signature="e#1847#1848#0" expanded="true" />
+            <element signature="e#5299#5308#0" expanded="true" />
+            <element signature="e#5836#5844#0" expanded="true" />
           </folding>
         </state>
       </provider>
