@@ -11,7 +11,7 @@ public class BaseballEliminationTester {
 //            StdOut.println("Is eliminated: " + be.isEliminated(team));
 //            StdOut.println("Eliminators: " + be.certificateOfElimination(team));
 //        }
-        BaseballElimination division = new BaseballElimination("test/teams60.txt");
+        BaseballElimination division = new BaseballElimination("teams.txt");
         for (String team : division.teams()) {
             if (division.isEliminated(team)) {
                 StdOut.print(team + " is eliminated by the subset R = { ");
